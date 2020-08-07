@@ -10,6 +10,7 @@
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
 
+
 axios.get('https://lambda-times-api.herokuapp.com/topics')
   .then(function (response) {
     const tabsData = response.data.topics;
@@ -24,3 +25,5 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
   .catch(function (error) {
     console.log(error);
   });
+
+
